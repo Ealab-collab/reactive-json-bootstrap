@@ -1,0 +1,68 @@
+{
+  "name": "@ea-lab/reactive-json-bootstrap",
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/reactive-json-bootstrap.js",
+      "require": "./dist/reactive-json-bootstrap.umd.cjs"
+    },
+    "./lib/*": "./lib/*"
+  },
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/ea-lab/reactive-json-bootstrap.git"
+  },
+  "keywords": [
+    "build",
+    "bootstrap",
+    "config",
+    "data",
+    "dynamic",
+    "interactive",
+    "json",
+    "react",
+    "structure",
+    "yaml"
+  ],
+  "author": "Quang-Minh DANG <quang-minh@ea-lab.io> (https://ea-lab.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ealab-collab/reactive-json/issues"
+  },
+  "homepage": "https://github.com/Ealab-collab/reactive-json#readme",
+  "devDependencies": {
+    "@ea-lab/reactive-json": "^0.7.1",
+    "@eslint/js": "^9.21.0",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.14.1",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "react": ">=18",
+    "react-dom": ">=18",
+    "rollup-plugin-dts": "^6.2.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.0"
+  },
+  "peerDependencies": {
+    "@ea-lab/reactive-json": ">=0.7.1",
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}
