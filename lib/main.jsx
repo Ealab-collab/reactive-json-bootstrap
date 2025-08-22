@@ -1,11 +1,11 @@
 /**
  * Entry point for the lib.
  */
-import {Test} from "./component/element";
+import * as elementComponents from "./component/element";
 
-export const bootstrapComponents = {
-    "element": {
-        Test,
+export const bootstrapComponentsPlugin = {
+    element: {
+        ...elementComponents,
     },
 };
 
