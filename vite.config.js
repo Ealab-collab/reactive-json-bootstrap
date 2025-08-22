@@ -15,7 +15,7 @@ export default defineConfig(({command}) => {
                 name: "ReactiveJsonBootstrap"
             },
             rollupOptions: {
-                external: ["react", "react-dom", "@ea-lab/reactive-json"],
+                external: ["bootstrap", "react", "react-bootstrap", "react-dom", "@ea-lab/reactive-json"],
                 output: {
                     globals: {
                         "react": 'React',

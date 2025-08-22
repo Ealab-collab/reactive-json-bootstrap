@@ -15,7 +15,7 @@ Then where `<ReactiveJsonRoot>` is located in your React app, do the following:
 ```jsx
 import {ReactiveJsonRoot} from "@ea-lab/reactive-json";
 import {mergeComponentCollections} from "@ea-lab/reactive-json";
-import {bootstrapComponents} from "@ea-lab/reactive-json-bootstrap";
+import {bootstrapComponentsPlugin} from "@ea-lab/reactive-json-bootstrap";
 
 export const YourApp = ({reactiveJsonProps}) => {
     const additionalProps = {};
@@ -23,7 +23,7 @@ export const YourApp = ({reactiveJsonProps}) => {
     // mergeComponentCollections will prepare the "plugins" property
     // of ReactiveJsonRoot.
     additionalProps.plugins = mergeComponentCollections([
-        bootstrapComponents,
+        bootstrapComponentsPlugin,
         /* Insert here any other component collection plugins. */
     ]);
     
