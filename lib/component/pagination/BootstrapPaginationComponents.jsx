@@ -1,10 +1,6 @@
 import { Pagination } from "react-bootstrap";
 
-export const BootstrapPaginationContainer = ({children, ...props}) => (
-    <Pagination {...props}>
-        {children}
-    </Pagination>
-);
+export const BootstrapPaginationContainer = ({ children, ...props }) => <Pagination {...props}>{children}</Pagination>;
 
 export const BootstrapPaginationEllipsis = Pagination.Ellipsis;
 export const BootstrapPaginationItem = Pagination.Item;
